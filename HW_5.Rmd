@@ -1,0 +1,252 @@
+---
+title: "Recognizing Roots: Mapping Philadelphia's Path to 250"
+author: "Kathleen Scopis"
+date: "Fall 2023"
+output: 
+  html_document:
+    css: style.css
+    toc: true
+    toc_float: true
+    code_folding: hide
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# 
+
+#### **In 2026, the United States will celebrate the 250th anniversary of the signing of the Declaration in Independence, commemorating a hallmark birthday.**
+
+[PHILADELPHIA250](https://www.philadelphia250.us/) is the organization
+tasked with the orchestration, promotion, and execution of city-wide
+events related to the 250th - right where many of the historic events
+took place. Danielle DiLeo Kim, as the organization's president and
+overseer of its projects and initiatives, is tasked with not only
+orchestrating anniversary-related events during the year, but also
+creating lasting partnerships throughout the city that will keep the
+momentum of the mega-event burning for years to come. Working directly
+with DiLeo Kim, I have spent the last few months constructing one
+pathway towards making the 250th an inclusive, neighborhood-based
+commemoration.
+
+**This report offers one approach to creating an empirical look into the
+Philadelphia neighborhoods, ending with a recommendation of selected
+"gateways" and other considerations for further development.**
+
+# **Celebrate, locally!**
+
+> **One of the challenges Danielle and the PHL250 team has chosen to
+> take on is the implementation of 250th events on the neighborhood
+> scale.**
+
+Over the last three centuries, Philadelphia welcomed the many of the
+budding nation's "firsts": its first hospital, bank, stock exchange,
+theater, university, zoo, and electronic computer were all the work of
+Philadelphians. These advancements in science, government, and the arts
+brought the City international attention, designating it the Nation's
+first UNESCO World Heritage City ([article
+here](https://www.phl.org/at-phl/art-exhibitions/digital-art-exhibitions/node322)).
+
+As the City welcomes thousands of visitors looking to engage in the
+250th celebrations, it is crucial for PHILADELPHIA250 to assist in
+introducing Philadelphia's complex identity on the national (and
+international) stage. Recognizing corridors along areas of particular
+historical, social, and cultural significance may act as "gateways" to
+the city for neighboring areas and residents. Highlighting these areas
+allows Philadelphians to celebrate their neighborhood in a way that is
+unique to them, welcoming those wanting to learn more.
+
+### What is a Gateway?
+
+The Gateways represent locations around the City that will become
+activated at different times throughout 2026, coordinating with local
+events and festivities that happen around special times of the year.
+Visitors navigating the gateway should be able to maneuver around the
+neighborhood in a few hours, or a short day trip. Activities may include
+walking tours, bus tours, museum trips, food tastings, and interactions
+with favorite businesses and residents.
+
+![](images/gateways.JPG)
+
+# **Methodology and Exploratory Analysis**
+
+#### What information is available?
+
+To look for areas around the city that may act as appropriate gateways,
+we may first begin with an empirical analysis of publicly available
+information and datasets, obtained through OpenDataPhilly.
+
+-   [City Landmarks -
+    OpenDataPhilly](https://opendataphilly.org/datasets/city-landmarks/)
+
+-   [Philadelphia Neighborhoods -
+    OpenDataPhilly](https://opendataphilly.org/datasets/philadelphia-neighborhoods/)
+
+-   [US Census - Foreign Born
+    Population](https://www.census.gov/topics/population/foreign-born.html)
+
+-   Philadelphia Geographic features (location analysis, see below)
+
+### Let's map!
+
+After analyzing the available data, it becomes clear that we should
+consider mapping analysis to highlight areas that have formally
+identified cultural landmarks. This can be found using the City
+Landmarks dataset.
+
+**To create the landmarks map, I took the following actions to filter:**
+
+1.  Download the landmark shp from ODP (OpenDataPhilly)
+
+2.  Filter out:
+
+    -   double entries
+    -   Youth Centers
+    -   Airports
+    -   Animal Clinics
+    -   Health Centers
+    -   High Schools
+    -   Hospitals
+    -   Police Stations
+    -   Shopping Centers
+    -   Senior Care Facilities
+    -   Water Pumping Stations
+    -   School/University Campuses
+    -   Transportation
+    -   Swimming Pools
+    -   Social Services
+    -   Post Offices
+    -   Parking Garages/Lots
+    -   Judicial Buildings
+    -   Golf Courses
+    -   Garages
+    -   Fire Stations
+    -   Cemeteries
+    -   Bridges
+    -   Municipal Buildings
+    -   Playgrounds
+    -   Houses of Worship
+
+## Identified Cultural Landmarks
+
+After completing the data cleaning process detailed above, the following
+cultural landmark map was created:
+
+![](images/LandmarkPoints.jpg)
+
+> **Existing identified cultural landmarks are largely centered around
+> Germantown, Fairmount Park, and Center City.**
+
+It becomes clear that the Germantown, Fairmount Park, and Center City
+areas are hotspots of identified cultural landmarks. However, as any
+Philly resident can tell you, this map clearly misses many key areas
+around the city, particularly in South Philly and Northeast areas.
+
+## Highlighting Immigrant Communities
+
+Philly's South and Northeast pockets are known for being home to
+international cultures. With a large amount of their residents being
+born outside of the US, these areas may be key to helping to highlight
+some of the City's cultural heritage. Using data pulled from the US
+Census, the map below displays percentage of residents who are born
+outside of the US, signaling areas of the City that have strong
+immigrant populations. Here, the South and Northeast regions are
+confirmed to hold characteristics not seen anywhere else the City,
+making them excellent places to consider looking for Gateway corridors.
+
+![](images/Foreign%20Born.jpg){width="553"}
+
+> **Northeast and South Philly neighborhoods are hubs for immigrant
+> communities**
+
+## Public Engagement
+
+While these maps may be pretty, they can only show us a glimpse of the
+story of Philly's residents and the streets they call home. As mentioned
+before, no one knows the City better than those who have built their
+lives there. For this next step in the process, we began to engage
+community leaders and local organizations, asking them about where they
+call home and how they identify their community.
+
+The map was presented at the Sunset Social community engagement meeting
+on November 1st. During the presentation, those in attendence were
+invited to place a dot on the map signaling what areas they consider to
+be their community. Understanding how organizations self identify allows
+us to have a more localized vantage point for viewing the connections
+among neighbors, as well as locate organizations and individuals that
+may act as potential partners and stakeholders in the gateway selection
+process.
+
+![](images/IMG_0728.jpg)
+
+##### A view of the Sunset Social event at the Cira Center in University City. What barriers existed to participate in this event?
+
+![](images/IMG_1458.jpeg){width="229"}
+
+##### Here's me next to the mapping exercise table!
+
+![](images/Map_Marked_Up.jpg){width="471"}
+
+##### Resulting map and results after discussions with attending community leaders.
+
+![](images/Sunset%20Social%20Dots.jpg){width="656"}
+
+## Recommended Gateway Areas
+
+After reviewing the results of mapping officially recognized cultural
+landmarks, immigrant communities, and Sunset Social engagement, a few
+potential sites for gateway locations have been highlighted, shown on
+the map below.
+
+![](images/PresentationBoard.jpg)
+
+# **Conclusion**
+
+![](images/conclusionPictures.JPG){width="759"}
+
+#### What have we learned?
+
+After completing this analysis, a few things become clear. First, there
+are clear spatial patterns associated with the areas marked with
+officially recognized cultural landmarks. These areas tend to be near
+neighborhoods that draw large tourism numbers and feature attractions
+known on the national, and often international, scale. However, it also
+becomes clear that this cataloging largely leaves out deeply ingrained
+communities around the city, particularly those with a strong immigrant
+presence.
+
+Moreover, there is a demonstrated effort from local organizations that
+community leaders want to be deeply involved in the planning process for
+the 250th. More direct and qualitative explorations must be considered,
+discussed below, and are welcomed by community members. Many Philly
+residents feel proud to have their neighborhood highlighted during the
+mega-event, and are happy to propose ideas of how to involve visitors
+and other Philadelphians.
+
+## Further Considerations
+
+Some assumptions that we made at the beginning of this analysis hold
+true. It is not possible for two people to accurately assess the
+important cultural landmarks around Philadelphia - that power lies in
+those who know Philly best. In order to most accurately assess which
+areas can (and should) serve as Gateways, on the ground research must be
+done.
+
+> **Mapping what we already know is not enough, we must tap into the
+> established knowledge that Philly's community leaders know best.**
+
+Starting in January, we will continue to define and redefine the areas
+marked in the Gateway map seen above. We will walk along the boundaries
+we draw, chatting with business-owners, neighbors, and visitors we meet
+along the way. Mapping what we already know is not enough, we must tap
+into the well-established knowledge that Philly's community leaders know
+best.
+
+### Acknowledgements
+
+Special thanks to Danielle DiLeo Kim and the Philadelphia26 studio team
+for assisting in additional research
